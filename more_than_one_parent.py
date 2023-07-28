@@ -8,7 +8,7 @@ with open ('children.csv', 'r') as f:
     for line in reader:
         parent_id=line[2]
 
-        if parent_id[-1]!=']':
+        if parent_id[-1]!=']' and parent_id!="parent_ids":
             count+=1
 
 
